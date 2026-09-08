@@ -24,6 +24,10 @@ public partial class MainViewModel : ObservableObject
 
     [ObservableProperty]
     private bool isBusy;
+    public bool IsNotBusy => !IsBusy;
+
+    [ObservableProperty]
+    private string? errorMessage;
 
     public ObservableCollection<TeklaPart> Parts { get; } = new();
 
@@ -44,6 +48,11 @@ public partial class MainViewModel : ObservableObject
             : "–";
     }
 
+    partial void OnIsBusyChanged(bool value)
+    {
+        OnPropertyChanged(nameof(IsNotBusy));
+    }
+
     [RelayCommand]
     private async Task LoadPartsAsync()
     {
@@ -53,12 +62,23 @@ public partial class MainViewModel : ObservableObject
         try
         {
             IsBusy = true;
+            ErrorMessage = null;
             Parts.Clear();
+
+            if (!_teklaService.IsConnected)
+            {
+                ErrorMessage = "Tekla Structures není spuštěná nebo není otevřený model.";
+                return;
+            }
 
             var parts = await _teklaService.GetPartsAsync();
 
             foreach (var part in parts)
                 Parts.Add(part);
+        }
+        catch (Exception ex)
+        {
+            ErrorMessage = $"Načtení modelu selhalo: {ex.Message}";
         }
         finally
         {

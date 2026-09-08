@@ -53,4 +53,4 @@ public partial class App : Application
         _serviceProvider.Dispose();
         base.OnExit(e);
     }
-};
+}

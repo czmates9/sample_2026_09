@@ -62,7 +62,10 @@ public partial class MainViewModel : ObservableObject
     {
         OnPropertyChanged(nameof(IsNotBusy));
     }
-
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="value"></param>
     partial void OnSearchTextChanged(string value)
     {
         PartsView.Refresh();

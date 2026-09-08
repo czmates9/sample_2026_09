@@ -1,14 +1,40 @@
-﻿using System.Configuration;
-using System.Data;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System.Windows;
+using TeklaModelInspector.Services;
+using TeklaModelInspector.ViewModels;
 
-namespace TeklaModelInspector
+namespace TeklaModelInspector;
+
+public partial class App : Application
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
-    public partial class App : Application
+    private readonly ServiceProvider _serviceProvider;
+
+    public App()
     {
+        var services = new ServiceCollection();
+
+
+        //Až bude aplikace běžet s Teklou, změní se pouze na:
+        //services.AddSingleton<ITeklaService, TeklaService>();
+        services.AddSingleton<ITeklaService, MockTeklaService>();  // !!
+
+        services.AddTransient<MainViewModel>();
+        services.AddTransient<MainWindow>();
+
+        _serviceProvider = services.BuildServiceProvider();
     }
 
+    protected override void OnStartup(StartupEventArgs e)
+    {
+        base.OnStartup(e);
+
+        var mainWindow = _serviceProvider.GetRequiredService<MainWindow>();
+        mainWindow.Show();
+    }
+
+    protected override void OnExit(ExitEventArgs e)
+    {
+        _serviceProvider.Dispose();
+        base.OnExit(e);
+    }
 }

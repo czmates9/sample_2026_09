@@ -1,16 +1,13 @@
 ﻿using System.Windows;
-using TeklaModelInspector.Services;
 using TeklaModelInspector.ViewModels;
 
 namespace TeklaModelInspector;
 
 public partial class MainWindow : Window
 {
-    public MainWindow()
+    public MainWindow(MainViewModel viewModel)
     {
         InitializeComponent();
-
-        ITeklaService teklaService = new MockTeklaService();
-        DataContext = new MainViewModel(teklaService);
+        DataContext = viewModel;
     }
 }

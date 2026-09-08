@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TeklaModelInspector.Models;
 using TeklaModelInspector.Services;
+using System.ComponentModel;
+using System.Windows.Data;
 
 namespace TeklaModelInspector.ViewModels;
 
@@ -28,12 +30,20 @@ public partial class MainViewModel : ObservableObject
 
     [ObservableProperty]
     private string? errorMessage;
+    [ObservableProperty]
+    private string searchText = string.Empty;
+
+    public ICollectionView PartsView { get; }
 
     public ObservableCollection<TeklaPart> Parts { get; } = new();
 
     public MainViewModel(ITeklaService teklaService)
     {
         _teklaService = teklaService;
+
+        PartsView = CollectionViewSource.GetDefaultView(Parts);
+        PartsView.Filter = FilterPart;
+
         RefreshConnectionStatus();
     }
 
@@ -51,6 +61,36 @@ public partial class MainViewModel : ObservableObject
     partial void OnIsBusyChanged(bool value)
     {
         OnPropertyChanged(nameof(IsNotBusy));
+    }
+
+    partial void OnSearchTextChanged(string value)
+    {
+        PartsView.Refresh();
+    }
+
+    private bool FilterPart(object item)
+    {
+        if (item is not TeklaPart part)
+            return false;
+
+        if (string.IsNullOrWhiteSpace(SearchText))
+            return true;
+
+        return part.Id.ToString().Contains(
+                   SearchText,
+                   StringComparison.OrdinalIgnoreCase)
+               || part.Name.Contains(
+                   SearchText,
+                   StringComparison.OrdinalIgnoreCase)
+               || part.Profile.Contains(
+                   SearchText,
+                   StringComparison.OrdinalIgnoreCase)
+               || part.Material.Contains(
+                   SearchText,
+                   StringComparison.OrdinalIgnoreCase)
+               || part.ObjectType.Contains(
+                   SearchText,
+                   StringComparison.OrdinalIgnoreCase);
     }
 
     [RelayCommand]

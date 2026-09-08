@@ -1,16 +1,10 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TeklaModelInspector.Models;
-using TeklaModelInspector.Services;
 using System.ComponentModel;
 using System.Windows.Data;
+using TeklaModelInspector.Models;
+using TeklaModelInspector.Services;
 
 namespace TeklaModelInspector.ViewModels;
 
@@ -62,10 +56,7 @@ public partial class MainViewModel : ObservableObject
     {
         OnPropertyChanged(nameof(IsNotBusy));
     }
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="value"></param>
+
     partial void OnSearchTextChanged(string value)
     {
         PartsView.Refresh();

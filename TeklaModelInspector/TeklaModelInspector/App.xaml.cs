@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using System.Windows;
 using TeklaModelInspector.Services;
 using TeklaModelInspector.ViewModels;
@@ -11,13 +12,28 @@ public partial class App : Application
 
     public App()
     {
+        var configuration = new ConfigurationBuilder()
+            .SetBasePath(AppContext.BaseDirectory)
+            .AddJsonFile("appsettings.json", optional: false)
+            .Build();
+
         var services = new ServiceCollection();
 
+        var useMock = bool.TryParse(
+            configuration["Tekla:UseMock"],
+            out var configuredValue)
+            && configuredValue;
 
-        //Až bude aplikace běžet s Teklou, změní se pouze na:
-        //services.AddSingleton<ITeklaService, TeklaService>();
-        services.AddSingleton<ITeklaService, MockTeklaService>();  // !!
+        if (useMock)
+        {
+            services.AddSingleton<ITeklaService, MockTeklaService>();
+        }
+        else
+        {
+            services.AddSingleton<ITeklaService, TeklaService>();
+        }
 
+        services.AddSingleton<IConfiguration>(configuration);
         services.AddTransient<MainViewModel>();
         services.AddTransient<MainWindow>();
 
@@ -37,4 +53,4 @@ public partial class App : Application
         _serviceProvider.Dispose();
         base.OnExit(e);
     }
-}
+};

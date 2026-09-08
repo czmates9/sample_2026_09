@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD9510B-1A4B-B5AE-B065-6B88FCF0CAF0}|TeklaModelInspector\\TeklaModelInspector.csproj|c:\\users\\ratho\\onedrive\\plocha\\work_2026\\sample\\teklamodelinspector\\teklamodelinspector\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3DD9510B-1A4B-B5AE-B065-6B88FCF0CAF0}|TeklaModelInspector\\TeklaModelInspector.csproj|solutionrelative:teklamodelinspector\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD9510B-1A4B-B5AE-B065-6B88FCF0CAF0}|TeklaModelInspector\\TeklaModelInspector.csproj|c:\\users\\ratho\\onedrive\\plocha\\work_2026\\sample\\teklamodelinspector\\teklamodelinspector\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD9510B-1A4B-B5AE-B065-6B88FCF0CAF0}|TeklaModelInspector\\TeklaModelInspector.csproj|solutionrelative:teklamodelinspector\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD9510B-1A4B-B5AE-B065-6B88FCF0CAF0}|TeklaModelInspector\\TeklaModelInspector.csproj|c:\\users\\ratho\\onedrive\\plocha\\work_2026\\sample\\teklamodelinspector\\teklamodelinspector\\services\\mockteklaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD9510B-1A4B-B5AE-B065-6B88FCF0CAF0}|TeklaModelInspector\\TeklaModelInspector.csproj|solutionrelative:teklamodelinspector\\services\\mockteklaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD9510B-1A4B-B5AE-B065-6B88FCF0CAF0}|TeklaModelInspector\\TeklaModelInspector.csproj|c:\\users\\ratho\\onedrive\\plocha\\work_2026\\sample\\teklamodelinspector\\teklamodelinspector\\services\\iteklaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD9510B-1A4B-B5AE-B065-6B88FCF0CAF0}|TeklaModelInspector\\TeklaModelInspector.csproj|solutionrelative:teklamodelinspector\\services\\iteklaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD9510B-1A4B-B5AE-B065-6B88FCF0CAF0}|TeklaModelInspector\\TeklaModelInspector.csproj|c:\\users\\ratho\\onedrive\\plocha\\work_2026\\sample\\teklamodelinspector\\teklamodelinspector\\models\\teklapart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD9510B-1A4B-B5AE-B065-6B88FCF0CAF0}|TeklaModelInspector\\TeklaModelInspector.csproj|solutionrelative:teklamodelinspector\\models\\teklapart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD9510B-1A4B-B5AE-B065-6B88FCF0CAF0}|TeklaModelInspector\\TeklaModelInspector.csproj|c:\\users\\ratho\\onedrive\\plocha\\work_2026\\sample\\teklamodelinspector\\teklamodelinspector\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{3DD9510B-1A4B-B5AE-B065-6B88FCF0CAF0}|TeklaModelInspector\\TeklaModelInspector.csproj|solutionrelative:teklamodelinspector\\app.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD9510B-1A4B-B5AE-B065-6B88FCF0CAF0}|TeklaModelInspector\\TeklaModelInspector.csproj|c:\\users\\ratho\\onedrive\\plocha\\work_2026\\sample\\teklamodelinspector\\teklamodelinspector\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD9510B-1A4B-B5AE-B065-6B88FCF0CAF0}|TeklaModelInspector\\TeklaModelInspector.csproj|solutionrelative:teklamodelinspector\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\TeklaModelInspector\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "TeklaModelInspector\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\TeklaModelInspector\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "TeklaModelInspector\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAmwEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T17:03:46.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MockTeklaService.cs",
+              "DocumentMoniker": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\TeklaModelInspector\\Services\\MockTeklaService.cs",
+              "RelativeDocumentMoniker": "TeklaModelInspector\\Services\\MockTeklaService.cs",
+              "ToolTip": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\TeklaModelInspector\\Services\\MockTeklaService.cs",
+              "RelativeToolTip": "TeklaModelInspector\\Services\\MockTeklaService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAywDEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T17:02:17.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ITeklaService.cs",
+              "DocumentMoniker": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\TeklaModelInspector\\Services\\ITeklaService.cs",
+              "RelativeDocumentMoniker": "TeklaModelInspector\\Services\\ITeklaService.cs",
+              "ToolTip": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\TeklaModelInspector\\Services\\ITeklaService.cs",
+              "RelativeToolTip": "TeklaModelInspector\\Services\\ITeklaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T17:01:00.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TeklaPart.cs",
+              "DocumentMoniker": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\TeklaModelInspector\\Models\\TeklaPart.cs",
+              "RelativeDocumentMoniker": "TeklaModelInspector\\Models\\TeklaPart.cs",
+              "ToolTip": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\TeklaModelInspector\\Models\\TeklaPart.cs",
+              "RelativeToolTip": "TeklaModelInspector\\Models\\TeklaPart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T17:00:17.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\TeklaModelInspector\\App.xaml.cs",
+              "RelativeDocumentMoniker": "TeklaModelInspector\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\TeklaModelInspector\\App.xaml.cs",
+              "RelativeToolTip": "TeklaModelInspector\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T16:48:31.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\TeklaModelInspector\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "TeklaModelInspector\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\TeklaModelInspector\\MainWindow.xaml",
+              "RelativeToolTip": "TeklaModelInspector\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-09-08T16:06:01.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\TeklaModelInspector\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TeklaModelInspector\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ratho\\OneDrive\\Plocha\\work_2026\\sample\\TeklaModelInspector\\TeklaModelInspector\\MainWindow.xaml.cs",
+              "RelativeToolTip": "TeklaModelInspector\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T16:05:58.104Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
